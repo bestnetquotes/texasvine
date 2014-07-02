@@ -1,0 +1,17 @@
+---
+layout: default
+title: TexasVine Blog
+---
+       
+
+<h1>Recent Vine News</h1>
+
+{% for post in site.posts offset: 0 limit: 5  %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {{post.content}}
+{% endfor %}
+
+
+{% for post in site.posts offset: 5 limit: 10  %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

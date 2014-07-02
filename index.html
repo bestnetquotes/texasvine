@@ -140,12 +140,16 @@ IF YOU ARE AN OFFENDER’S FAMILY MEMBER or FRIEND:<br>
 <br>
 For offender information, you may call 1-936-295-6371 or toll free at 1-800-535-0283 to speak with an operator Monday through Friday from 8am to 5pm. You may also call these telephone numbers to receive automated offender status and location information 24/7/365. You MUST have the offender's TDCJ or State Identification (SID) number in order to access the automated information. The TDCJ Ombudsman's office can be contacted by calling 1-936-437-8035 Monday through Friday from 8am to 5pm or via email at ombudsman@tdcj.state.tx.us.<br>
 <br>
-<br>
-<br>
-<br>
+
 <p>
 &nbsp;
 </p>
+
+<h2>Recent News </h2>
+
+{% for post in site.posts offset: 0 limit: 5  %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
 </div>
 </div>    
     
