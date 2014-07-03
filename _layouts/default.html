@@ -56,11 +56,11 @@
       
     <!-- Menu Tabs -->
     <ul>
-      <li id="current"><a href="{{site.baseurl}}/index.html"><span>Home</span></a></li>
-      <li><a href="{{site.baseurl}}/blog.aspx"><span>Recent Vine News</span></a></li>
-      <li><a href="{{site.baseurl}}/page/VictimResource.aspx"><span>Victime Resource</span></a></li>
-      <li><a href="{{site.baseurl}}/NationWideVine.aspx"><span>Nation Wide VINE</span></a></li>
-      <li><a href="{{site.baseurl}}/page/Texas-DUI.aspx"><span>Texas DUI</span></a></li>     
+      <li {% if page.nav == 'home' %} id="current" {% endif %}   ><a href="{{site.baseurl}}/index.html"><span>Home</span></a></li>
+      <li {% if page.nav == 'blog' %} id="current" {% endif %}  ><a href="{{site.baseurl}}/blog.aspx"><span>Recent Vine News</span></a></li>
+      <li {% if page.nav == 'resource' %} id="current" {% endif %}  ><a href="{{site.baseurl}}/page/VictimResource.aspx"><span>Victime Resource</span></a></li>
+      <li {% if page.nav == 'nation' %} id="current" {% endif %} ><a href="{{site.baseurl}}/NationWideVine.aspx"><span>Nation Wide VINE</span></a></li>
+      <li {% if page.nav == 'dui' %} id="current" {% endif %} ><a href="{{site.baseurl}}/page/Texas-DUI.aspx"><span>Texas DUI</span></a></li>     
     </ul> 
                           
   </div>  
@@ -109,7 +109,7 @@
       
 
    {{ content }}
-              
+    <br/>
     </div>  
       
     <div id="rightbar">
@@ -124,11 +124,11 @@
 <div id="footer">
   
   <div class="footer-left">
- 
+    <br>
   </div>
   
   <div class="footer-right">
-
+  <br/>
   </div>
   
 </div>
