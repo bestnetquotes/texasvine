@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: http://www.texasvine.com/sitemap.xml
