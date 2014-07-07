@@ -190,7 +190,7 @@ form.searchform input.button {
 
 #header h2#slogan{position:absolute;top:32px;left:95px;color:#666666;text-indent:0px;font:bold 14px Tahoma,'trebuchet MS',Sans-serif;text-transform:none;margin:0pt;padding:0}
 
-#headerAds{padding-top:5px;padding-left:30px;background-color:#FFFFFF;width:780px;height:20px;border:0px}
+#headerAds{padding-top:5px;padding-left:30px;background-color:#FFFFFF;width:780px;border:0px}
 
 
 /*
@@ -363,7 +363,7 @@ form.searchform input.button {
 /* end menu tabs */
 
 /* alignment classes */
-.float-left  { float: left; }
+.float-left  { float: left; padding-right: 5px }
 .float-right {	float: right; }
 .align-left  {	text-align: left; }
 .align-right {	text-align: right; }
